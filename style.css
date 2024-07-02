@@ -1,0 +1,371 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #ebeff3;
+    padding: 10px;
+    width: 100%;
+}
+
+#navvbar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlink {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navlink li {
+    margin-right: 50px;
+}
+.navlink li:last-child {
+    margin-right: 30px;
+}
+
+.navlink li:first-child{
+    margin-left: 150px;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 0px;
+}
+
+#bsa{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 140%;
+}
+
+#logoo{
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+/* dropdown */
+
+/* .dropdownn-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.916);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownn-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownn-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdownn:hover .dropdownn-content {
+    display: block;
+} */
+
+/*  carousel */
+
+.carousel{
+    margin-top: 75px;
+}
+
+#heroimagehead{
+    padding: 0;
+    margin-top: 30px;
+    width: 570px;
+}
+
+#heroimage{
+    border-radius: 20px;
+}
+
+#whoweare{
+    margin-top: 70px;
+}
+
+.whatwedo{
+    background-color: #221f1f;
+    height: 650px;
+}
+
+.animatedh2{
+    color: white;
+    font-weight: 350;
+    font-size: 300%;
+    padding: 70px;
+    margin-left: 50px;
+    animation-direction: alternate;
+}
+
+.threetabs{
+    text-align: center;
+}
+
+.tab {
+    color: #aaaaaa;
+    display: inline-block;
+    font-size: 125%;
+    padding: 0px 130px;
+}
+
+.tab:hover {
+    color: white;
+    transition: 1.2s;
+}
+
+#hrr{
+    color: white;
+    width: 70%;
+    margin: 15px auto;
+}
+
+.content {
+    display: none;
+    color: white;
+    width: 616px;
+    padding: 70px 0px;
+}
+
+.center-block{
+    display: hidden;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content > p{
+    text-align: justify;
+    line-height: 35px;
+}
+
+.content.active {
+    display: block;
+}
+
+.tab.active-tab {
+    color: white;
+    transition: none;
+}
+
+.button1 {
+    background-color: #221f1f; 
+    color: white; 
+    border: 1px solid #fff;
+    font-weight: 400;
+}
+  
+.button1:hover {
+    background-color: #221f1f;
+    color: white;
+}
+
+.tabp{
+    opacity: 0;
+    animation: moveToCenter 3s forwards;
+}
+
+@keyframes moveToCenter {
+    from {
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+.inner-sector{
+    background-color: white;
+    height: 500px;
+}
+
+.sectorsh2{
+    color: #221f1f;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 50px 0px 50px 100px;
+}
+
+/* Sectors */
+
+.three-img-set1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.three-img-set2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+#nested-div-img{
+    margin-bottom: 30px;
+}
+
+.lastimg{
+    filter: brightness(0) contrast(1);
+    margin-top: 20px;
+    width: 60px;
+}
+
+.image-title > a{
+    text-decoration: none;
+    color: #221f1f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* career */
+
+.index-footer{
+    background-image: url(./assets/career-img.jpg);
+    background-position: 50% 36px;
+    background-attachment: fixed;
+    height: 320px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/career-img.jpg); */
+}
+
+.overlayer{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.footer-div1{
+    height: 100%;
+    position: relative;
+    padding: 77px 0px 90px 0px;
+}
+
+.footer-div2 > h2{
+    line-height: 52px;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    margin-left: 160px;
+}
+
+.footer-p{
+    margin-top: 30px;
+    word-spacing: 5px;
+    color: white;
+    font-size: 16px;
+    line-height: 35px;
+    padding-bottom: 40px;
+    margin-left: 160px;
+}
+
+.footer-location{
+    background-color: #221f1f;
+    height: 340px;
+}
+
+.footer-h2{
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+    padding: 55px 950px 40px 100px;
+}
+
+.number > img{
+    height: 28px;
+    width: 28px;
+    margin: 0px 0px 15px 100px;
+}
+
+.number > p{
+    color: white;
+    margin-top: 1px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.mapp{
+    float: right;
+    height: 260px;
+    width: 450px;
+    margin-top: 50px;
+    padding: 0px 50px 0px 0px;
+}
+
+.copyright > p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaaaaa;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#gmail{
+    text-decoration: none;
+    color: white;
+}
+
+/* about us */
+
+.containerr {
+    max-width: 800px;
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+.h22{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+.owners {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.owner {
+    margin: 1em;
+    text-align: center;
+    max-width: 300px;
+}
+.owner > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 1em;
+}
+.owner > h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.owner > p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.icon_logo{
+    position: fixed;
+    bottom: 40px;
+    margin-right: 20px;
+    right: 20px;
+    z-index: 1000;
+}
