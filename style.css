@@ -101,6 +101,7 @@
 
 #heroimage{
     border-radius: 20px;
+    width: 600px;
 }
 
 #whoweare{
@@ -246,7 +247,7 @@
     background-image: url(./assets/career-img.jpg);
     background-position: 50% 36px;
     background-attachment: fixed;
-    height: 320px;
+    height: 330px;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/career-img.jpg); */
 }
 
@@ -276,7 +277,8 @@
     margin-top: 30px;
     word-spacing: 5px;
     color: white;
-    font-size: 18spx;
+    font-size: 16px;
+    width: 900px;
     line-height: 35px;
     padding-bottom: 40px;
     margin-left: 160px;
@@ -287,7 +289,7 @@
     height: 340px;
 }
 
-.footer-h2{
+.footerh2{
     color: white;
     font-size: 38px;
     font-weight: 300;
@@ -315,17 +317,16 @@
     padding: 0px 50px 0px 0px;
 }
 
-.copyright > p{
+.copyright{
     font-size: 14px;
     font-weight: 300;
     color: #aaaaaa;
-    margin-top: 20px;
     margin-left: 100px;
 }
 
 #gmail{
     text-decoration: none;
-    color: white;
+    color: white;   
 }
 
 /* about us */
@@ -380,4 +381,214 @@
 .mobile-number > a{
     text-decoration: none;
     font-weight: 500;
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+    *{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: normal;
+    } 
+
+    .index-navigation{
+        display: none;
+    }
+
+    .carousel{
+        margin-top: 75px;
+    }
+
+    .d-block{
+        height: 250px;
+    }
+
+    #heroimage{
+        width: auto;
+        border-radius: 0px;
+    }
+
+    .animatedh2{
+        color: white;
+        font-weight: 350;
+        font-size: 200%;
+        padding: 30px 0px 30px 10px;
+        animation-direction: alternate;
+    }
+    
+    .threetabs{
+        text-align: center;
+    }
+    
+    .tab {
+        color: #aaaaaa;
+        display: inline-block;
+        font-size: 120%;
+        padding: 20px;
+    }
+    
+    .tab:hover {
+        color: white;
+        transition: 1.2s;
+    }
+    
+    #hrr{
+        color: white;
+        width: 70%;
+        margin: 15px auto;
+    }
+    
+    .content {
+        display: none;
+        color: white;
+        width: 380px;
+        padding: 70px 0px;
+    }
+    
+    .center-block{
+        display: hidden;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .content > p{
+        text-align: justify;
+        line-height: 35px;
+    }
+    
+    .content.active {
+        display: block;
+    }
+    
+    .tab.active-tab {
+        color: white;
+        transition: none;
+    }
+
+    .button1 {
+        background-color: #221f1f; 
+        color: white; 
+        border: 1px solid #fff;
+        font-weight: 400;
+    }
+      
+    .button1:hover {
+        background-color: #221f1f;
+        color: white;
+    }
+    
+    .tabp{
+        opacity: 0;
+        animation: moveToCenter 3s forwards;
+        font-size: 16px;
+    }
+    
+    @keyframes moveToCenter {
+        from {
+            opacity: 0; /* Fully transparent */
+        }
+        to {
+            opacity: 1; /* Fully opaque */
+        }
+    }
+
+    .inner-sector{
+        background-color: white;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sectorsh2{
+        color: #221f1f;
+        font-size: 40px;
+        font-weight: 300;
+        margin: 30px 0px 50px 60px;
+    }
+
+    /* career */
+    
+    .index-footer{
+        background-image: url(./assets/career-img.jpg);
+        background-position: 50% 36px;
+        background-attachment: fixed;
+        height: 380px;
+    }
+    
+    .overlayer{
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    
+    .footer-div1{
+        height: 100%;
+        position: relative;
+        padding: 77px 0px 90px 0px;
+    }
+    
+    .footer-div2 > h2{
+        line-height: 52px;
+        color: white;
+        font-size: 42px;
+        font-weight: 300;
+        margin-left: 70px;
+    }
+    
+    .footer-p{
+        width: 300px;
+        margin-top: 30px;
+        word-spacing: 5px;
+        color: white;
+        font-size: 16px;
+        line-height: 35px;
+        padding-bottom: 40px;
+        margin-left: 70px;
+    }
+
+    /* contact us */
+
+    .footer-location{
+        background-color: #221f1f;
+        height: 350px;
+    }
+    
+    .footerh2{
+        color: white;
+        font-size: 36px;
+        font-weight: 300;
+        padding: 50px 0px 40px 60px;
+    }
+    
+    .number > img{
+        height: 28px;
+        width: 28px;
+        margin: 0px 0px auto 60px;
+    }
+    
+    .number > p{
+        color: white;
+        margin-top: 1px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    .mapp{
+        display: none;
+    }
+    
+    .copyright > p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #aaaaaa;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    
+    #gmail{
+        text-decoration: none;
+        color: white;
+    }
 }
