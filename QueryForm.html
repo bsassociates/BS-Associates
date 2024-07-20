@@ -218,7 +218,8 @@
         <img src="./assets/BS_Logo-removebg-preview.png" alt="Logo">
     </div>
     <h2 class="form-title">QUERY FORM</h2>
-    <form onsubmit="sendEmail(); reset(); return false;">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="59a9d067-2740-4aa7-8adf-154f4971c637">
         <div class="form-group">
             <label for="applicant-name">Applicant's First Name:</label>
             <input type="text" id="applicant-name" name="applicant-name" required>
@@ -288,20 +289,5 @@
     </div>
   </section>
 
-  <script src="https://smtpjs.com/v3/smtp.js">
-    function sendEmail(){
-      Email.send({
-        Host : "smtp.gmail.com",
-        Username : "gediyakrish9@gmail.com",
-        Password : "@@@@@@@@",
-        To : 'gediyakrish9@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Contact Inquiry",
-        Body : "And this is the body"
-      }).then(
-      message => alert(message)
-      );
-    }
-  </script>
 </body>
 </html>
