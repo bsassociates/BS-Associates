@@ -1,13 +1,3 @@
-/* navigation bar */
-
-.navigat-mobile{
-    display: none;
-}
-
-.hamburger{
-    display: none;
-}
-
 header{
     background-color: #f8f9fa;
 }
