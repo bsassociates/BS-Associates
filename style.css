@@ -1,6 +1,7 @@
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -16,11 +17,6 @@
     z-index: 1000;
 }
 
-.container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .navlink {
     display: flex;
     list-style-type: none;
@@ -64,29 +60,39 @@
 
 /*  carousel */
 
-.carousel{
-    margin-top: 75px;
+.caroussel{
+    height: 550px;
+    margin-top: 80px;
 }
 
-#heroimagehead{
-    padding: 0;
-    margin-top: 30px;
-    width: 479px;
-}
-
-#heroimage{
-    border-radius: 20px;
-    width: 600px;
-    height: 280px;
-}
-
+/* what we are */
 #whoweare{
-    margin-top: 70px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+#heroimage{
+    width: 475px;
+    border-radius: 20px;
+    margin-top: 22px;
+}
+#heroh2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+#herodesc{
+    font-size: 19px;
+    text-align: justify;
+    width: 475px;
+    margin-left: 30px;
 }
 
+/* what we do */
 .whatwedo{
     background-color: #221f1f;
-    height: 650px;
+    height: auto;
 }
 
 .animatedh2{
@@ -100,6 +106,7 @@
 
 .threetabs{
     text-align: center;
+    cursor: pointer;
 }
 
 .tab {
@@ -175,6 +182,8 @@
     }
 }
 
+/* Sectors */
+
 .inner-sector{
     background-color: white;
     height: 500px;
@@ -187,7 +196,14 @@
     margin: 50px 0px 50px 100px;
 }
 
-/* Sectors */
+
+.pc-services {
+    display: block;
+  }
+  
+.mobile-services {
+    display: none;
+}
 
 .three-img-set1{
     display: flex;
@@ -224,7 +240,6 @@
     background-position: 50% 36px;
     background-attachment: fixed;
     height: 330px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/career-img.jpg); */
 }
 
 .overlayer{
@@ -260,16 +275,18 @@
     margin-left: 160px;
 }
 
+/* footer location */
+
 .footer-location{
     background-color: #221f1f;
-    height: 340px;
+    height: auto;
 }
 
 .footerh2{
     color: white;
     font-size: 38px;
     font-weight: 300;
-    padding: 55px 950px 40px 100px;
+    padding: 55px 0px 40px 100px;
 }
 
 .number > img{
@@ -291,6 +308,11 @@
     width: 450px;
     margin-top: 50px;
     padding: 0px 50px 0px 0px;
+}
+
+.copyright{
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 10px 0px;
 }
 
 .copyright{
@@ -359,244 +381,66 @@
     font-weight: 500;
 }
 
-/* 600px */
-@media screen and (max-width: 600px) {
-    *{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-style: normal;
-    }
+.whatsapp-logo{
+    width: 50px;
+    height: 50px;
+}
 
-    html{
-        width: 100%;
-    }
+/* navigation bar */
 
-    .index-navigation{
-        display: none;
-    }
+.navigat-mobile{
+    display: none;
+}
 
-    .carousel{
-        margin-top: 75px;
-    }
+.hamburger{
+    display: none;
+}
 
-    .d-block{
-        height: 250px;
-        width: 100%;
-    }
+header{
+    background-color: #f8f9fa;
+}
 
-    #heroimage{
-        width: auto;
-        border-radius: 0px;
-    }
+.navigat-branding{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    width: 100%;
+    margin-left: 8px;
+}
 
-    .whatwedo{
-        width: auto;
-    }
+.navigat-logo{
+    height: 60px;
+}
 
-    .animatedh2{
-        color: white;
-        font-weight: 350;
-        font-size: 200%;
-        padding: 50px 0px 20px 0px;
-        animation-direction: alternate;
-    }
-    
-    .threetabs{
-        text-align: center;
-    }
-    
-    .tab {
-        color: #aaaaaa;
-        display: inline-block;
-        font-size: 120%;
-        padding: 20px;
-    }
-    
-    .tab:hover {
-        color: white;
-        transition: 1.2s;
-    }
-    
-    #hrr{
-        color: white;
-        width: 70%;
-        margin: 15px auto;
-    }
+.navigat-item{
+    list-style: none;
+}
 
-    .tabss{
-        margin-left: 20px;
-    }
-    
-    .content {
-        display: none;
-        color: white;
-        width: 380px;
-        padding: 30px 45px 70px 0px;
-    }
-    
-    .center-block{
-        display: hidden;
-        float: none;
-    }
-    
-    .content > p{
-        text-align: justify;
-        line-height: 35px;
-    }
-    
-    .tab.active-tab {
-        color: white;
-        transition: none;
-    }
+.navigat-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-    .button1 {
-        background-color: #221f1f; 
-        color: white; 
-        border: 1px solid #fff;
-        font-weight: 400;
-    }
-      
-    .button1:hover {
-        background-color: #221f1f;
-        color: white;
-    }
-    
-    .tabp{
-        opacity: 0;
-        animation: moveToCenter 3s forwards;
-        font-size: 16px;
-        padding: 0px 40px 0px 20px;
-    }
-    
-    @keyframes moveToCenter {
-        from {
-            opacity: 0; /* Fully transparent */
-        }
-        to {
-            opacity: 1; /* Fully opaque */
-        }
-    }
+.navigatbar{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 6px;
+}
 
-    .inner-sector{
-        background-color: white;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .sectorsh2{
-        color: #221f1f;
-        font-size: 40px;
-        font-weight: 300;
-        margin: 30px 0px 50px 60px;
-    }
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
 
-    /* career */
-    
-    .index-footer{
-        background-image: url(./assets/career-img.jpg);
-        background-position: 50% 36px;
-        background-attachment: fixed;
-        height: 400px;
-        margin-top: 50px;
-        width: auto;
-    }
-    
-    .overlayer{
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    
-    .footer-div1{
-        height: 100%;
-        position: relative;
-        padding: 77px 0px 90px 0px;
-    }
-    
-    .footer-div2 > h2{
-        line-height: 52px;
-        color: white;
-        font-size: 42px;
-        font-weight: 300;
-        margin-left: 30px;
-    }
-    
-    .footer-p{
-        width: 300px;
-        margin-top: 30px;
-        word-spacing: 5px;
-        color: white;
-        font-size: 16px;
-        line-height: 35px;
-        padding-bottom: 40px;
-        margin-left: 30px;
-    }
-
-    /* contact us */
-
-    .footer-location{
-        background-color: #221f1f;
-        height: 420px;
-    }
-    
-    #mob-num{
-        padding-right: 80px;
-    }
-
-    #add{
-        margin-top: 15px;
-    }
-
-    #calll{
-        margin-top: 10px;
-    }
-
-    .footerh2{
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        padding: 50px 0px 40px 40px;
-    }
-    
-    .number > img{
-        height: 28px;
-        width: 28px;
-        margin: 0px 0px auto 60px;
-    }
-    
-    .number > p{
-        color: white;
-        margin-top: 1px;
-        font-size: 16px;
-        margin-left: 10px;
-    }
-    
-    .mapp{
-        display: none;
-    }
-    
-    .copyright > p{
-        font-size: 14px;
-        font-weight: 300;
-        color: #aaaaaa;
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
-    .copyright{
-        margin-left: 30px;
-        padding-left: 0px;
-    }
-    
-    #gmail{
-        text-decoration: none;
-        color: white;
-    }
-
-    .icon_logo{
-        margin-right: 35px;
-    }
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: black;
 }
