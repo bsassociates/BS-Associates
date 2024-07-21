@@ -41,3 +41,19 @@ document.addEventListener('scroll', function() {
         showContent('work', document.querySelector('.tab'));
     }
 });
+
+
+// hamburger
+
+const hamburger = document.querySelector(".hamburger");
+const navigatmenu = document.querySelector(".navigat-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navigatmenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".navigat-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navigatmenu.classList.remove("active");
+}))
