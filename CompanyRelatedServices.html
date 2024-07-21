@@ -9,193 +9,103 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./assets/BS_Logo-removebg-preview.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CompanyRelatedServicesMediaQuery.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    .navvbar {
-            background-color: #ebeff3;
-            padding: 10px 0px 10px 0px;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .containerr-fluid {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navvlink {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .navvlink li {
-            margin-right: 45px;
-        }
-        .navvlink li:last-child {
-            margin-right: 30px;
-        }
-
-        .navvlink li:first-child{
-            margin-left: auto;
-        }
-
-        .navvlink a {
-            text-decoration: none;
-            color: #000;
-            padding-right: 0px;
-        }
-
-        #bsa{
-            text-decoration: none;
-            color: #000;
-            font-weight: 600;
-            font-size: 140%;
-            float: left;
-            padding-top: 18px;
-        }
-
-        #logoo{
-            margin-right: 10px;
-            float: left;
-        }
-
-        .imgp{
-            padding-left: 20px;
-        }
-    .icon_logo{
-        position: fixed;
-        bottom: 40px;
-        margin-right: 20px;
-        right: 20px;
-        z-index: 1000;
-    }
-    body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .footer-location{
-            background-color: #221f1f;
-            height: 340px;
-            margin-top: 10px;
-        }
-
-    .footer-h2{
-        color: white;
-        font-size: 38px;
-        font-weight: 300;
-        padding: 55px 950px 40px 100px;
-    }
-
-    .number > img{
-        height: 28px;
-        width: 28px;
-        margin: 0px 0px 15px 100px;
-    }
-
-    .number > p{
-        color: white;
-        margin-top: 1px;
-        font-size: 16px;
-        margin-left: 10px;
-    }
-
-    .mapp{
-        float: right;
-        height: 260px;
-        width: 450px;
-        margin-top: 50px;
-        padding: 0px 50px 0px 0px;
-    }
-
-    .copyright > p{
-        font-size: 14px;
-        font-weight: 300;
-        color: #aaaaaa;
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
-    #gmail{
-        text-decoration: none;
-        color: white;
-    }
-
-    .mobile-number > a{
-        text-decoration: none;
-        font-weight: 500;
-    }
-
-    .crs-data{
-            padding-top: 100px;
-            margin-bottom: 100px;
-        }
-
-        .img-table{
-          padding: 30px;
-          height: 400px;
-          margin-left: 200px;
-        }
-</style>
 </head>
 <body>
-    <!-- navbar -->
-  <section class="navbbar">
-    <nav class="navvbar bg-body-tertiary" id="navvbar">
-      <div class="containerr-fluid">
+  <!-- navbar -->
+  <div class="index-navigation">
+    <nav class="navbar bg-body-tertiary" id="navvbar">
+      <div class="container-fluid">
         <div class="imgp">
-            <img src="./assets/BS_Logo-removebg-preview.png" id="logoo" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
-            <span id="bsa">B.S. & Associates</span>
+          <img src="./assets/BS_Logo-removebg-preview.png" id="logoo" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+          <span id="bsa">B.S. & Associates</span>
         </div>
-        <ul class="navvlink">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="https://bsassociates.vercel.app/index.html#inner-sector">SERVICES</a></li>
-            <li><a href="https://bsassociates.vercel.app/index.html#whoweare">WHAT WE ARE</a></li>
-            <li><a href="https://bsassociates.vercel.app/index.html#whatwedo">WHAT WE DO</a></li>
-            <li><a href="#footer-location">CONTACT</a></li>
-            <li><a href="./QueryForm.html">QUERY FORM</a></li>
-            <li><a href="https://bsassociates.vercel.app/index.html#index-footer">CAREERS</a></li>
+        <ul class="navlink">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="https://bsassociates.vercel.app/#inner-sector">SERVICES</a></li>
+          <li><a href="https://bsassociates.vercel.app/#whoweare">WHAT WE ARE</a></li>
+          <li><a href="https://bsassociates.vercel.app/#whatwedo">WHAT WE DO</a></li>
+          <li><a href="#footer-location">CONTACT</a></li>
+          <li><a href="./QueryForm.html">QUERY FORM</a></li>
+          <li><a href="https://bsassociates.vercel.app/#index-footer">CAREERS</a></li>
         </ul>
       </div>
     </nav>
-  </section>
+  </div>
 
-  <section class="crs-data">
-    <b style="padding: 20px; padding-bottom: 0px; font-size: 20px;">Certainly! Let’s explore the different types of companies that can be incorporated in India and their compliance requirements:</b>
-    <div style="line-height: 30px; padding: 20px; padding-bottom: 0px;">
+  <!-- navbar for mobile -->
+  <header class="container navigat-mobile" id="navigat-mobile" style="z-index: 1000;">
+    <nav class="navigatbar">
+        <a href="#" class="navigat-logo"><img src="assets/BS_Logo-removebg-preview.png" alt="bs BS_Logo-removebg-preview" class="navigat-logo"></a>
+        <a href="#" class="navigat-branding">B.S. Associates</a>
+
+        <ul class="navigat-menu">
+            <li class="navigat-item">
+                <a href="./index.html" class="navigat-link">Home</a>
+            </li>
+            <li class="navigat-item">
+                <a href="https://bsassociates.vercel.app/#mobile-services" class="navigat-link">Services</a>
+            </li>
+            <li class="navigat-item">
+                <a href="https://bsassociates.vercel.app/#whoweare" class="navigat-link">What we are</a>
+            </li>
+            <li class="navigat-item">
+                <a href="https://bsassociates.vercel.app/#whatwedo" class="navigat-link">What we do</a>
+            </li>
+            <li class="navigat-item">
+                <a href="#footer-location" class="navigat-link">Contact</a>
+            </li>
+            <li class="navigat-item">
+                <a href="./QueryForm.html" class="navigat-link">Query Form</a>
+            </li>
+            <li class="navigat-item">
+                <a href="https://bsassociates.vercel.app/#index-footer" class="navigat-link">Career</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+  </header>
+
+  <!-- data -->
+  <div class="container crs-data">
+    <b style="font-size: 20px;">Certainly! Let’s explore the different types of companies that can be incorporated in India and their compliance requirements:</b>
+    <div style="line-height: 30px; padding: 20px 20px 0px 0px; padding-bottom: 0px;">
       
-<b>Registered Companies:</b><br>
-<b>Definition:</b> Registered companies come into existence only after receiving a Certificate of Incorporation from the Registrar of Companies (RoC) under the Companies Act, 2013. <br>
-<b>Features:</b>
-<ul>
-  <li><b>Perpetual Succession:</b> A registered company remains unaffected by death, insolvency, or losses. It is a separate legal entity.</li>
-  <li><b>Limited Liability:</b> Members’ liability is limited to the extent of their shareholding.</li>
-  <li><b>Easy Share Transfers:</b> Shares can be transferred freely.</li>
-  <li><b>Professional Management:</b> The board of directors manages the company.</li>
-</ul>
+    <b>Registered Companies:</b><br>
+    <b>Definition:</b> Registered companies come into existence only after receiving a Certificate of Incorporation from the Registrar of Companies (RoC) under the Companies Act, 2013. <br>
+    <b>Features:</b>
+    <ul>
+      <li><b>Perpetual Succession:</b> A registered company remains unaffected by death, insolvency, or losses. It is a separate legal entity.</li>
+      <li><b>Limited Liability:</b> Members’ liability is limited to the extent of their shareholding.</li>
+      <li><b>Easy Share Transfers:</b> Shares can be transferred freely.</li>
+      <li><b>Professional Management:</b> The board of directors manages the company.</li>
+    </ul>
 
-<b>Statutory Companies:</b><br>
-<b>Definition:</b> Statutory companies are formed by special acts passed by the Parliament or central/state legislation. They exercise control over specific areas or commercial activities. <br>
-<b>Features:</b>
-<ul>
-  <li><b>Owned by the State:</b> These companies are state-owned and can enter contracts or start businesses in their name.</li>
-  <li><b>Separate Staffing System:</b> Employees are not government servants and follow specific rules.</li>
-  <li><b>Financial Independence:</b> They can borrow money within and outside the country with government permission.</li>
-  <li><b>Ideal Structure and Compliance:</b> compliance of all related Service.</li>
-</ul>
+    <b>Statutory Companies:</b><br>
+    <b>Definition:</b> Statutory companies are formed by special acts passed by the Parliament or central/state legislation. They exercise control over specific areas or commercial activities. <br>
+    <b>Features:</b>
+    <ul>
+      <li><b>Owned by the State:</b> These companies are state-owned and can enter contracts or start businesses in their name.</li>
+      <li><b>Separate Staffing System:</b> Employees are not government servants and follow specific rules.</li>
+      <li><b>Financial Independence:</b> They can borrow money within and outside the country with government permission.</li>
+      <li><b>Ideal Structure and Compliance:</b> compliance of all related Service.</li>
+    </ul>
 
-<b style="font-size: 20px;">Here’s a summary of different types of companies and their compliance requirements:</b><br>
-<p>Remember, choosing the right company structure depends on your business goals and requirements. If you need further assistance, feel free to ask!</p>
-  <img src="./assets/CRS_Table_1.jpg" alt="table" class="img-table">
+      <b style="font-size: 20px;">Here’s a summary of different types of companies and their compliance requirements:</b><br>
+      <p>Remember, choosing the right company structure depends on your business goals and requirements. If you need further assistance, feel free to ask!</p>
+      <div class="crs-data-img">
+        <img src="./assets/CRS_Table_1.jpg" alt="table" class="img-table">
+      </div>
     </div>
-  </section>
+  </div>
 
   <!-- footer location -->
-  <section class="footer-location" id="footer-location">
+  <div class="container-fluid footer-location" id="footer-location">
     <div class="map">
       <iframe class="mapp" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1315.0266965818237!2d72.8846343205633!3d21.213712140177233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fe675d5e7df%3A0x437fb9cc1948b3f4!2sThe%20Galleria!5e0!3m2!1sen!2sin!4v1719375180503!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -205,10 +115,10 @@
     </div>
 
     <div class="number" style="display: flex; filter: brightness(0) invert(1);">
-      <img src="./assets/logo-Call.png" alt="Contact-logo">
+      <img src="./assets/logo-Call.png" id="calllogo" alt="Contact-logo">
       <p style="font-size: 18px;" class="mobile-number">
         <a href="tel:+919925706818">+91 99257 06818 /</a>
-        <a href="tel:+918140439511"> +91 81404 39511</a>
+        <a href="tel:+918140439511" class="num"> +91 81404 39511</a>
       </p>
       <!-- +91 99257 06818 / +91 81404 39511 -->
     </div>
@@ -219,7 +129,7 @@
     </div>
 
     <div class="number" style="display: flex;">
-      <img src="./assets/logo-location.png" alt="Location-logo">
+      <img src="./assets/logo-location.png" alt="Location-logo" style="margin-top: 22px;">
       <p>410, The Galleria, Yogichowk, Surat, Gujarat - 395010</p>
     </div>
 
@@ -227,12 +137,15 @@
       <p class="copyright" style="margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px; font-size: 15px;">&copy; B.S. & Associates</p>
       <p class="copyright">&copy; Developed and Designed by Krish Gediya</p>
     </div>
-  </section>
+  </div>
 
+  <!-- whatsapp -->
   <div class="icon_logo">
     <a href="https://api.whatsapp.com/send/?phone=9925706818&text&type=phone_number&app_absent=0" target="_blank">
-        <img src="./assets/Whatsapp_Logo.png" width="50" height="50" alt="Whatsapp">
+        <img src="./assets/Whatsapp_Logo.png" class="whatsapp-logo" alt="Whatsapp">
     </a>
   </div>
+    
+  <script src="script.js"></script>
 </body>
 </html>
