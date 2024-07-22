@@ -14,25 +14,37 @@
 </head>
 <body>
   <!-- navbar -->
-  <div class="index-navigation">
-    <nav class="navbar bg-body-tertiary" id="navvbar">
-      <div class="container-fluid">
-        <div class="imgp">
-          <img src="./assets/BS_Logo-removebg-preview.png" id="logoo" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
-          <span id="bsa">B.S. & Associates</span>
-        </div>
-        <ul class="navlink">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="https://bsassociates.vercel.app/#inner-sector">SERVICES</a></li>
-          <li><a href="https://bsassociates.vercel.app/#whoweare">WHAT WE ARE</a></li>
-          <li><a href="https://bsassociates.vercel.app/#whatwedo">WHAT WE DO</a></li>
-          <li><a href="#footer-location">CONTACT</a></li>
-          <li><a href="./QueryForm.html">QUERY FORM</a></li>
-          <li><a href="https://bsassociates.vercel.app/#index-footer">CAREERS</a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="index-navigation">
+    <div class="index-logo-title">
+        <img src="./assets/BS_Logo-removebg-preview.png" alt="BS_Logo" class="bs-logo">
+        <h3 class="bs-title">B.S. Associates</h3>
     </div>
+    <div class="navigation-links">
+        <ul class="navlink">
+            <li><a href="./index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="https://bsassociates.vercel.app/#inner-sector" class="dropbtn">SERVICES
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <a href="./IncomeTaxServices.html">Income Tax Services</a>
+                  <a href="./GST.html">Goods and Services Tax</a>
+                  <a href="./Accounting.html">Accounting</a>
+                  <a href="./CustomeServices.html">Custome Services</a>
+                  <a href="./CustomeServices.html">Company Related Services</a>
+                  <a href="./OtherServices.html">Other Services</a>
+                </div>
+              </li>
+            <li><a href="https://bsassociates.vercel.app/#whoweare">WHAT WE ARE</a></li>
+            <li><a href="https://bsassociates.vercel.app/#whatwedo">WHAT WE DO</a></li>
+            <li><a href="https://bsassociates.vercel.app/#footer-location">CONTACT</a></li>
+            <li><a href="./QueryForm.html">QUERY FORM</a></li>
+            <li><a href="https://bsassociates.vercel.app/#index-footer">CAREER</a></li>
+        </ul>
+    </div>
+  </nav>
 
     <!-- navbar for mobile -->
     <header class="container navigat-mobile" id="navigat-mobile" style="z-index: 1000; max-width: 600px;">
@@ -113,7 +125,7 @@
     </div>
 
     <div class="number" style="display: flex;">
-      <img src="./assets/logo-location.png" alt="Location-logo">
+      <img src="./assets/logo-location.png" alt="Location-logo" style="margin-top: 22px;">
       <p>410, The Galleria, Yogichowk, Surat, Gujarat - 395010</p>
     </div>
 
