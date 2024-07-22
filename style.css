@@ -7,61 +7,46 @@
 }
 
 /* navbar */
-.navbar {
-    background-color: #ebeff3;
-    padding: 10px;
+.index-navigation{
+    background-color: #f5f5f6;
     width: 100%;
     display: block;
-    height: 85px;
-}
-
-#navvbar {
-    position: fixed;
-    z-index: 1000;
-}
-
-.navlink {
+    height: 80px;
     display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
 }
 
-.navlink li {
-    margin-right: 50px;
-    position: relative;
+.index-logo-title{
+    display: flex;
+    margin-right: auto;
 }
 
-.navlink li:last-child {
-    margin-right: 20px;
+.bs-logo{
+    height: 70px;
+    margin: auto 0px auto 15px;
 }
 
-.navlink li:first-child {
-    margin-left: 150px;
+.bs-title{
+    margin: auto 0px auto 8px;
+    font-weight: 550;
+    font-size: 25px;
 }
 
-.navlink a {
+.navlink{
+    display: flex;
+}
+
+.navlink > li > a{
     text-decoration: none;
-    color: #000;
-    padding-right: 0px;
+    color: black;
+    font-size: 16px;
 }
 
-#bsa {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: 140%;
-    float: left;
-    padding-top: 18px;
-}
-
-#logoo {
-    margin-right: 10px;
-    float: left;
-}
-
-.imgp {
-    padding-left: 10px;
+.navlink > li{
+    list-style: none;
+    margin: 30px 0px;
 }
 
 /* Dropdown CSS */
