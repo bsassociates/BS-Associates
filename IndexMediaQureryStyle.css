@@ -123,17 +123,13 @@ header{
 
     /* carousel */
 
-    .caroussel{
-        height: 250px;
-    }
-
     .d-block{
-        height: 250px;
+        height: auto;
         width: 100%;
     }
 
     .carousel-item img {
-        height: 225px;
+        height: auto;
         margin: 0;
         padding: 0;
     }
