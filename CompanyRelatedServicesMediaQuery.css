@@ -134,7 +134,7 @@ header{
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     /* main page */
     *{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
